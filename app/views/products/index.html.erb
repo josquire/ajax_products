@@ -1,0 +1,49 @@
+<h1>Welcome to THE SHOP</h1>
+<h3>Start Browsing</h3>
+
+<button id='load_products'>Our Products</button>
+<button id='add_product'>Add A Product</button>
+
+<div id='edit_content' class='no-display'>
+  <form id='edit_product' class='form container'>
+    <input id='edit_name' name='product[name]' required placeholder="Product Name"/>
+    <br/>
+    <input id='edit_price' name='product[base_price]' placeholder="Price"/>
+    <br/>
+    <input id='edit_description' name='product[description]' placeholder="Description"/>
+    <br/>
+    <input id='edit_quantity' name='product[quantity_on_hand]' placeholder="Quantity on hand"/>
+    <br/>
+    <input id='edit_color' name='product[color]' placeholder="Color"/>
+    <br/>
+    <input id='edit_weight' name='product[weight]' placeholder="Weight"/>
+    <br/>
+    <input id='edit_attributes' name='product[other_attributes]' placeholder="Attributes"/>
+    <br/>
+    <input type='hidden' id='product_id'/>
+    <input type='submit'/>
+  </form>
+</div>
+
+<div id='new_product' class='no-display'>
+  <form class="" action="/products" method="post">
+    <input id='product_name' type='text' name='product[name]' required placeholder="Product Name"/>
+    <br/>
+    <input id='product_price' type='text' name='product[base_price]'  placeholder="Base Price"/>
+    <br/>
+    <input id='product_description' type='text' name='product[description]' placeholder="Description"/>
+    <br/>
+    <input id='product_quantity' type='text' name='product[quantity_on_hand]' placeholder="Quantity on Hand"/>
+    <br/>
+    <input id='product_color' type='text' name='product[color]' placeholder="Product Color"/>
+    <br/>
+    <input id='product_weight' type='text' name='product[weight]' placeholder="Product Weight"/>
+    <br/>
+    <input id='product_attributes' type='text' name='product[other_attributes]' placeholder="Attributes"/>
+    <br/>
+    <input type='submit'/>
+  </form>
+</div>
+
+
+<ul id='products'></ul>
